@@ -1,15 +1,13 @@
 /* Gerais */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Pacifico', cursive;
 }
 
 .row {
     margin: 0;
 }
 
-.navbar{
-    font-family: 'Pacifico', cursive;
-}
+
 
 .container {
     padding: 20px 0;
@@ -78,11 +76,11 @@ header, .navbar {
 }
 
 #mainSlider .carousel-caption {
-    top: 10%;
+    top: 15%;
 }
 
 #mainSlider .carousel-caption h2 {
-    font-size: 100px;
+    font-size: 70px;
     margin-bottom: 30px;
 }
 
@@ -123,6 +121,8 @@ header, .navbar {
     text-align: center;
 }
 
+
+
 #cardapio-area .filter-btn {
     color: #444;
     border: 1px solid #444;
@@ -148,6 +148,15 @@ header, .navbar {
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-text {
+    font-size: 15px;
+    height: 30px;
 }
 
 /* Footer */
@@ -204,6 +213,7 @@ header, .navbar {
 #copy-area {
     background-color: #f1f1f1;
     position: unset;
+    font-family: 'roboto', serif;
 }
 
 #copy-area .container {
@@ -229,19 +239,35 @@ header, .navbar {
         padding: 10px 0;
     }
     /* slider */
-    #mainSlider .carousel-caption {
+    #mainSlider .carousel-inner, #mainSlider .carousel-item {
         height: 90vh;
-        margin-top: 20%;
+    }
+
+    #mainSlider .carousel-caption {
+        height: 60vh;
     }
 
     #mainSlider .carousel-caption h2 {
         font-size: 50px;
     }
 
+    #mainSlider .carousel-caption p {
+        margin-bottom: 40px;
+    }
+
+    .carousel-caption {
+        left: 10%;
+        right: 10%;
+    }
+
     /* cardapio */
     #cardapio-area .filter-btn {
         margin: 0 1px;
     }
+
+    .card-text {
+        display: none;
+    }   
 
     /* formulario */
     .main-btn {
@@ -251,6 +277,10 @@ header, .navbar {
 
 @media(max-width: 430px) {
     /* geral */
+    .container {
+        padding: 20px 0;
+    }
+
     .main-title {
         font-size: 30px;
         margin: 5px 0 5px 0;
@@ -263,16 +293,11 @@ header, .navbar {
         margin-top: 10px;
     }
 
-    #mainSlider .carousel-inner {
+    #mainSlider .carousel-inner, #mainSlider .carousel-item {
         height: auto;
     }
 
-
-    .carousel-caption {
-        top: 5%;
-        height: 10px;
-    }
-
+    
     #mainSlider .carousel-caption h2{
         font-size: 18px;
         margin-bottom: 40px;
@@ -280,7 +305,7 @@ header, .navbar {
 
     #mainSlider .carousel-caption p {
         font-size: 15px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     .carousel-caption .main-btn {
@@ -292,6 +317,10 @@ header, .navbar {
     }
 
     /* cardapio */
+    #cardapio {
+        margin-top: 15%;
+    }
+
     #cardapio-area .filter-btn {
         margin: 0 5px 5px 5px;
         min-width: 10px;
@@ -299,16 +328,24 @@ header, .navbar {
         font-size: 10px;
     }
 
+    #mainSlider {
+        height: auto;
+    }
+
     #filter-btn-box {
         width: 100%;
     }
     .project-box{
-        width: 50%;
+        width: 100%;
     }
 
     /* footer */
     .container {
         padding: 7px;
+    }
+
+    #contato {
+        margin-top: 15%;
     }
 
     
