@@ -1,6 +1,6 @@
 /* Gerais */
 body {
-    font-family: 'Pacifico', cursive;
+    font-family: 'roboto', serif;
 }
 
 .row {
@@ -38,6 +38,7 @@ p, li {
 
 header, .navbar {
     background-color: rgb(179, 11, 179);
+    font-family: 'Pacifico', cursive;
 }
 
 #nav-container {
@@ -143,20 +144,18 @@ header, .navbar {
 }
 
 .img-fluid {
-    width: 200px;
-    height: 200px;
+    width: auto;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
-    display: block;
 }
 
-.card-body {
+.card {
     text-align: center;
 }
 
-.card-text {
-    font-size: 15px;
-    height: 30px;
+.card-title {
+    font-size: 14px;
 }
 
 /* Footer */
@@ -165,7 +164,7 @@ header, .navbar {
     text-align: center;
 }
 
-.contact-box {
+.contact-box , .social-box {
     padding-bottom: 10px;
     margin-bottom: 10px;
     border-bottom: 1px solid violet;
@@ -208,12 +207,30 @@ header, .navbar {
     color: violet;
 }
 
+.contact-box a {
+    width: 100px;
+}
+
+.fab {
+    font-size: 50px;
+    margin: 10px;
+    color: #444;
+}
+
+.social-box i {
+    transition: .5s;
+}
+
+.fab:hover {
+    color: violet;
+}
+
+
 /* Copy */
 
 #copy-area {
     background-color: #f1f1f1;
     position: unset;
-    font-family: 'roboto', serif;
 }
 
 #copy-area .container {
@@ -265,14 +282,11 @@ header, .navbar {
         margin: 0 1px;
     }
 
-    .card-text {
-        display: none;
-    }   
-
     /* formulario */
     .main-btn {
         margin-top: 5px;
     }
+     
 }
 
 @media(max-width: 430px) {
