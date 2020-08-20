@@ -74,7 +74,7 @@ header, .navbar {
 }
 
 .carousel-item img {
-    height: 720px;
+    height: auto;
     width: auto;
 }
 
@@ -115,6 +115,28 @@ header, .navbar {
     color: violet;
     background-color: transparent;
     border-color: violet;
+}
+
+/* About */
+
+#about-area {
+    background-color: rgb(247, 239, 247);
+}
+
+#about-area img {
+    height: 50vh;
+    width: 100%;
+    border: 3px solid rgb(179, 11, 179);
+}
+
+.about-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-item p {
+    margin: 0;
 }
 
 /* Cardápio */
@@ -355,6 +377,11 @@ header, .navbar {
     .carousel-item img {
         height: auto;
         width: auto;
+    }
+
+    /* About */
+    .about-item p {
+        margin-top: 15px;
     }
 
     /* cardapio */

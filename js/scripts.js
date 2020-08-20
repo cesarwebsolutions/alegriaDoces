@@ -46,8 +46,10 @@ $(document).ready(function() {
     let navBtn = $('.nav-item');
     
     let bannerSection = $('#mainSlider');
+    let aboutSection = $('#about-area')
     let cardapioSection = $('#cardapio-area');
     let contactSection = $('#contact-area');
+    
 
     let scrollTo = '';
 
@@ -59,6 +61,8 @@ $(document).ready(function() {
 
         if(btnId == 'home-menu') {
             scrollTo = bannerSection;
+        }else if(btnId == 'about-menu') {
+            scrollTo = aboutSection
         } else if(btnId == 'cardapio-menu') {
             scrollTo = cardapioSection;
         } else if(btnId == 'contact-menu') {
