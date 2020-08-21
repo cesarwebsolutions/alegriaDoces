@@ -7,8 +7,9 @@ body {
 .row {
     margin: 0;
 }
-
-
+header, h5 {
+    font-family: 'Pacifico', cursive;
+}
 
 .container {
     padding: 20px 0;
@@ -39,7 +40,6 @@ p, li {
 
 header, .navbar {
     background-image: linear-gradient(to bottom,rgb(179, 11, 179), rgb(182, 114, 182) );
-    font-family: 'Pacifico', cursive;
 }
 
 #nav-container {
@@ -129,15 +129,14 @@ header, .navbar {
     border: 3px solid rgb(179, 11, 179);
 }
 
-.about-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#about-area .about-box {
+    
+    text-align: center;
+    
+    padding: 0;
+    
 }
 
-.about-item p {
-    margin: 0;
-}
 
 /* Cardápio */
 
@@ -380,8 +379,11 @@ header, .navbar {
     }
 
     /* About */
-    .about-item p {
-        margin-top: 15px;
+    #about {
+        margin: 15% 0 15% 0;
+    }
+    #about-img {
+        display: none;
     }
 
     /* cardapio */
